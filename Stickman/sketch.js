@@ -9,9 +9,6 @@ var speed2 = 0
 function setup() {
   let canvas = createCanvas(600, 400);
   canvas.parent(game)
-
-  text = createElement('h2', 'Hej Rasmus, klik/tryk på en knap');
-  text.position(155, 3);
 }
 
 function draw() {
