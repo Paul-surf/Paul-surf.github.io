@@ -38,7 +38,7 @@ li a {
   
   li a:hover {
     text-decoration: underline;
-    color: lightgrey;
+    color: lightgray;
   
   
 }
@@ -93,4 +93,14 @@ aside {
     padding: 5px;
     float: left;
     text-decoration: none;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+  footer a:hover {
+    color: lightgray;
+    text-decoration: underline white;
   }
