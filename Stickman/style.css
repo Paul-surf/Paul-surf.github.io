@@ -30,3 +30,13 @@ nav {
   padding: 5px;
   margin-top: 1px;
 }
+#game {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 97px;
+}
+#defaultCanvas0 {
+    border: 3px solid black
+}
