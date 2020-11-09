@@ -12,8 +12,8 @@ article, aside, footer, header, main, nav, section {
 
 .banner {
   background-color: #11233b;
-  color: white;
-  padding: .003%;
+  color: rgb(255, 255, 255);
+  padding: .003%
 }
 
 body {
@@ -37,8 +37,8 @@ li a {
 }
 
 li a:hover {
-  text-decoration: underline;
-  color: lightgray;
+    text-decoration: underline;
+    color: lightgray;
 }
 
 li {
@@ -56,34 +56,24 @@ h1 {
     color: white;
     margin: 20px;
 }
-#game {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 97px;
-}
-#defaultCanvas0 {
-    border: 3px solid black
-}
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 1908px;
-  height: 1.2rem;
-  background-color:#20416c;
-  border: 1px solid black;
-  color: white;
-  padding: 5px;
-  float: left;
-  text-decoration: none;
-}
+    position: absolute;
+    bottom: 0;
+    width: 1908px;
+    height: 1.2rem;
+    background-color:#20416c;
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+    float: left;
+    text-decoration: none;
+  }
 footer a {
-color: white;
-text-decoration: none;
-padding-left: 10px;
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
 }
 footer a:hover {
-  color: lightgray;
-  text-decoration: underline white;
-}
+    color: lightgray;
+    text-decoration: underline white;
+  }
