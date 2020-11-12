@@ -64,15 +64,48 @@ h1 {
     color: white;
     margin: 20px;
 }
+#button-container {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    top: 30px;
+}
+#plus-et {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#plus-ti {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#minus-et {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#minus-ti {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#vis-d {
+    margin: 5px;
+    padding: 9px 12px 9px 12px;
+}
+
+button {
+    color: white;
+    background-color: rgb(50, 50, 50);
+}
 #game {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 97px;
-}
-#defaultCanvas0 {
-    border: 3px solid black
 }
 #footer {
   position: absolute;

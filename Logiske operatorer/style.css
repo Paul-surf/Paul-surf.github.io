@@ -72,15 +72,14 @@ h1 {
     margin-top: 97px;
 }
 #defaultCanvas0 {
-    border: 3px solid black
+    border: 5px solid black
 }
 #footer {
   position: absolute;
   bottom: 0;
-  width: 1908px;
+  width: 1910px;
   height: 1.2rem;
   background-color:#20416c;
-  border: 1px solid black;
   color: white;
   padding: 5px;
   float: left;
