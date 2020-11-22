@@ -7,6 +7,11 @@
     }
   }      
 
+  function setup() {
+    let canvas = createCanvas(600,400);
+    canvas.parent(game)
+  }
+
     function Plus() {
       let i = 0
       let n = 0

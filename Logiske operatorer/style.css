@@ -70,6 +70,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-top: 97px;
+    margin-bottom: 97px;
 }
 #defaultCanvas0 {
     border: 5px solid black
@@ -77,13 +78,14 @@ h1 {
 #footer {
   position: absolute;
   bottom: 0;
-  width: 1910px;
+  width: 99%;
   height: 1.2rem;
   background-color:#20416c;
   color: white;
   padding: 5px;
   float: left;
   text-decoration: none;
+  position: sticky;
 }
 footer a {
 color: white;
