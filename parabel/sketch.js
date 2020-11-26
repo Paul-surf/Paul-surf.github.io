@@ -6,6 +6,7 @@ function setup() {
 var d = 0;
 var globalChoice ="";
 
+//Funktionen knapperne har
 function changeVal(choice) {
     if (choice == 'val1') {
         d = d + 1;
@@ -19,7 +20,7 @@ function changeVal(choice) {
    globalChoice = d;
 }
 function display(){
-    alert('Lines = ' + globalChoice*2);
+    alert('Lines = ' + (globalChoice*2-2));
 }
 
 function draw() {
