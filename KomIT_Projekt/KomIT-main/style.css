@@ -13,13 +13,11 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 15px;
+  background-image: "../KomIT-main/images/steched.jpg";
   color: rgba(0,0,0,.87);
-  font-family: Helvetica,Helvetica,Arial,sans-serif;
+  font-family: "Manrope",Helvetica,Arial,sans-serif;
   font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.75;
-  letter-spacing: -.01em;
+  font-size: 1.4em;
 }
 
 header {
@@ -31,6 +29,15 @@ header {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 15px;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0,0.2);
+  position: relative;
+  position: fixed;
+  font-size: 1.2em;
+}
+
+main {
+  padding-top: 95px;
+  margin: 0 114px;
 }
 
 nav {
@@ -42,14 +49,31 @@ nav {
 
 .nav_list {
   margin: 0%;
-  padding: 0;
+  padding: 0 0 0 15px;
   list-style: none;
   display: flex;
   flex-direction: row;
 }
 
-.nav_list li:nth-of-type(2) {
-  margin-right: auto;
+.nav_list li:nth-child(3) {
+  margin-left: auto;
+}
+
+.nav_list .round-white a {
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 0 10px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.nav_list .round-black a {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 0 10px;
+  text-decoration: none;
 }
 
 li a {
@@ -66,10 +90,10 @@ li {
   display: inline;
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 20px;
   font-variant: small-caps;
   font-weight: bold;
   color: black;
+  font-weight: 800;
 }
 
 p a {
@@ -89,7 +113,6 @@ article {
 section {
   background-color: #d4e9e2;
   color: black;
-  margin-top: 10px;
   padding: 5px;
   text-align: center;
   justify-content: center;
@@ -97,7 +120,6 @@ section {
   padding-bottom: 1.6em;
   display: flex;
   box-sizing: border-box;
-  border-top: 1px solid #9db1aa; 
   }
 
 h1 {
