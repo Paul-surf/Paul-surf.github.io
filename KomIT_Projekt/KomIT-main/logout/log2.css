@@ -13,12 +13,15 @@ article, aside, footer, header, main, nav, section {
 .banner {
   background-color: white;
   color: white;
-  padding: .003%;
-  border: 1px solid black;
+  padding: 0 100px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 7px 1px rgba(0,0,0,0.2);
 }
 
 body {
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -93,23 +96,22 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 0 0 38em;
     cursor: pointer;
     align-items: center;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 5%;
   }
 
 h2 {
     text-align: center;
-}
-  
-#game {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 97px;
+    margin: 0 40px 0 0;
 }
-#defaultCanvas0 {
-    border: 3px solid black
+  
+form {
+  padding: 0 0 0 500px;
 }
