@@ -1,68 +1,90 @@
-// Lav en variabel og kald den x
-// giv x værdien 200
-let x = 200;
+const Ball = function(x, y, radius) {
 
-// opret flere variabler
-let xSpeed = 5;
-let y = 200;
-let ySpeed = 3;
+  this.color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+  this.direction = Math.random() * Math.PI * 2;
+  this.radius = radius;
+  this.speed = Math.random() * 4 + 2;
+  this.x = x;
+  this.y = y;
 
-let c;
-let cFill;
+};
 
-// Definer en funktion der kan ændre fyld og stregfarve
-function changeColor() {
-  c = color(random(255), random(255), random(255));
-  cFill = color(random(255), random(255), random(255));
-  strokeWeight(10);
-  stroke(c);
-  fill(cFill);
-}
+Ball.prototype = {
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  const speedScale = 128
-  xSpeed = windowWidth / speedScale
-  ySpeed = windowHeight / speedScale
-  changeColor();
-}
+  updatePosition:function(width, height) {
 
-var Ball = {
-  create: function (color, dx, dy) {
-      var newBall = Object.create(this);
-      newBall.dx = dx;
-      newBall.dy = dy;
+    this.x += Math.cos(this.direction) * this.speed;
+    this.y += Math.sin(this.direction) * this.speed;
+
+    if(this.x - this.radius < 0) {
+
+      this.x = this.radius;
+
+      this.direction = Math.atan2(Math.sin(this.direction), Math.cos(this.direction) * -1);
+
+    } else if (this.x + this.radius > width) {
+
+      this.x = width - this.radius;
+
+      this.direction = Math.atan2(Math.sin(this.direction), Math.cos(this.direction) * -1);
+
     }
+
+    if(this.y - this.radius < 0) {
+
+      this.y = this.radius;
+
+      this.direction = Math.atan2(Math.sin(this.direction) * -1, Math.cos(this.direction));
+
+    } else if (this.y + this.radius > height) {
+
+      this.y = height - this.radius;
+
+      this.direction = Math.atan2(Math.sin(this.direction) * -1, Math.cos(this.direction));
+
+    }
+
+  }
+
+};
+
+var context = document.querySelector("canvas").getContext("2d");
+
+var balls = new Array();
+
+let x = document.documentElement.clientWidth * 0.5;
+let y = document.documentElement.clientHeight * 0.5;
+
+for(let index = 0; index < 50; index ++) {
+
+  balls.push(new Ball(x, y, Math.floor(Math.random() * 17 + 27)));
+
 }
 
-function draw() {
-  background(c);
+function loop() {
 
-  rect(0, 0, width, height);
+  window.requestAnimationFrame(loop);
 
-  // opret variablen d og tildel værdien 120
-  let d = 120;
+  let height = document.documentElement.clientHeight;
+  let width  = document.documentElement.clientWidth;
 
-  // tegn en cirkel med centrum i (x, y) og diameter d
-  circle(x, y, d);
+  context.canvas.height = height;
+  context.canvas.width = width;
 
-  // hvis x er større end bredden af lærredet
-  // så sæt xSpeed til -xSpeed
-  if (x > width - d / 2) {
-    changeColor();
-    xSpeed = -xSpeed;
+  /* I removed that - 1 after making the video. It's not neccessary. */
+  for(let index = 0; index < balls.length; index ++) {
+
+    let ball = balls[index];
+
+    context.fillStyle = ball.color;
+    context.beginPath();
+    context.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+    context.fill();
+
+    ball.updatePosition(width, height);
+
   }
 
-  if (x < 0 + d / 2) {
-    changeColor();
-    xSpeed = -xSpeed;
-  }
-
-  if (y > height - d / 2 || y < 0 + d / 2) {
-    changeColor();
-    ySpeed = -ySpeed;
-  }
-
-  x = x + xSpeed;
-  y = y + ySpeed;
 }
+
+loop();
