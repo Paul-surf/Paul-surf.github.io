@@ -232,8 +232,9 @@ h1 {
 
 footer {
   border-top: solid 0.1px rgb(83, 79, 79);
+  font-size: 20px;
 }
 
-.foot-p {
+.foot-p { 
   font-size: small;
 }
