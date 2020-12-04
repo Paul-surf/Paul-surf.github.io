@@ -13,12 +13,11 @@ article, aside, footer, header, main, nav, section {
 .banner {
   background-color: white;
   color: white;
-  padding: .003%;
-  border: 1px solid black;
+  box-shadow: 0 35px 7px 1px rgba(0,0,0,0.2);
 }
 
 body {
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -29,20 +28,34 @@ body {
 nav {
   background-color: white;
   padding: 5px;
-  margin-top: 1px;
-  border: 1px solid black;
 }
 
 .nav_list {
-    margin: 0%;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
-.nav_list li:nth-of-type(1) {
-    margin-right: auto;
+.nav_list li:nth-child(1) {
+  color: black;
+  margin-left: 25em;
+}
+
+.nav_list li:nth-of-type(2) {
+    margin-left: 2em;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0 5px 2px 5px;
+}
+
+.nav_list li:nth-child(2):hover {
+  background-color: rgb(0, 0, 0);
+}
+  
+.nav_list li:nth-child(3) {
+  margin-left: 2em;
+  color: black;
 }
 
 li a {
@@ -73,11 +86,26 @@ section {
   border: 2px solid black;
   }
 
-h1 {
-    text-align: left;
+.h1 {
+    text-align: center;
     background-color: white;
     color: black;
-    margin: 20px;
+    justify-content: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+.h1-header {
+  text-align: center;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  display: flex;
+  padding-left: 30px;
+}
+
+.p1 {
+  padding-top: 25px;
 }
 
 h2 {
@@ -93,8 +121,12 @@ h2 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 0 0 39.5em;
     cursor: pointer;
+    justify-content: center;
+    display: flex;
+    width: 5%;
+    align-items: center;
   }
 
 #game {
