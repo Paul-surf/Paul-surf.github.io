@@ -65,23 +65,6 @@ h2 {
     padding-bottom: 15px;
 }
 
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  
-.button1 {
-  padding-left: 220px;
-}
-
 .absolute {
   position: absolute;
   top: 150px;
@@ -93,8 +76,28 @@ h2 {
 
 .form1 {
   padding-left: 120px;
+  align-items:center;
+  justify-content: center;
+  position: center  ;
 }
 
-#lname {
-  padding-left: 9px;
+.password1 {
+  padding-left: 5px;
+}
+
+.login-button {
+  padding: 7px 8px;
+  align-items: center;
+  margin-left: 125px;
+  background-color: rgb(23, 248, 23);
+  outline: 2px solid rgb(31, 202, 31);
+  border: none
+}
+
+.login-button:hover {
+  background-color: rgb(27, 201, 27);
+}
+
+h3 {
+  margin-top: 5px;
 }

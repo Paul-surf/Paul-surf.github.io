@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="../login/style.css">
+    <link rel="stylesheet" type="text/css" href="../logout/style.css">
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -19,16 +19,19 @@
   <div class="absolute">
     <h2>Sign in</h2>
 
-    <form class="form1" action="/action_page.php">
-      <label for="fname">Username:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Password:</label>
-      <input type="password" id="lname" name="lname"><br><br>
+    <form class="form1" action="../menuv2/index.html">
+      <label for="name">Username:</label>
+      <input required id="name" type="text" />
+      <br />
+      <br />
+      <div class="password1">
+      <label for="password">Password:</label>
+      <input type="password" required id="password">
+      <br />
+      <br />
+      </div>
+      <input class="login-button" type="submit" value="login" />
     </form>
-
-    <div class="button1">
-    <a href="../menuv2/index.html" class="button" id="button1">Login</a>
-    </div>
     <h3><img src="../images/rew.png"></h3>
   </div>
   </body>
