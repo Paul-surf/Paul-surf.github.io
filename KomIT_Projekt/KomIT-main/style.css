@@ -238,3 +238,8 @@ footer {
 .foot-p { 
   font-size: small;
 }
+
+.image {
+  padding-left: 500px;
+  padding-top: 40px;
+}
