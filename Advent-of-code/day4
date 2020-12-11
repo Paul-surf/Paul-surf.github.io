@@ -1,0 +1,145 @@
+# elements er = byr, iyr, eyr, hgt, hcl, ecl, pid, cid
+# et passport uden en af de nævnte elementer er invalid
+# lav et program der scanner alle passports for valid.
+
+#key value = elements
+# I min elements skal jeg ikke behøver jeg ikkke og bruge cid, da i opgave beskrivelsen står der
+# at det ikke er nødvendigt at de skal have cid.
+
+fields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+good_passports = []
+
+def is_vaild_passport(pp):
+    for field in fields:
+        if field not in pp:
+            return False
+    return True
+
+with open('day4-input.txt') as file:
+    data = file.readlines()
+    data = [ line.strip() for line in data]
+
+vaildCount = 0
+
+currentPassport = ''
+for line in data:
+    if line != '':
+        currentPassport += '' + line
+
+    else:
+        if is_vaild_passport(currentPassport):
+            good_passports.append(currentPassport)
+            vaildCount += 1
+
+        currentPassport = ''
+
+if is_vaild_passport(currentPassport):
+    good_passports.append(currentPassport)
+    vaildCount += 1
+
+print(vaildCount)
+
+#day4 part 2
+
+def is_vaild_byr(byr):
+    byr = int(byr)
+
+    if byr < 1920 or byr > 2002:
+        return False
+
+    return True
+
+def is_vaild_iyr(iyr):
+    iyr = int(iyr)
+
+    if iyr < 2010 or iyr > 2020:
+        return False
+
+    return True
+
+def is_vaild_eyr(eyr):
+    eyr = int(eyr)
+
+    if eyr < 2020 or eyr > 2030:
+        return False
+
+    return True
+
+def is_vaild_hgt(hgt):
+    units = hgt [-2:]
+
+    if units not in ['in', 'cm']:
+        return False
+
+    hgt = int(hgt[:-2])
+
+    if units == 'in':
+        if hgt < 59 or hgt > 76:
+            return False
+    
+    elif units == 'cm':
+        if hgt < 150 or hgt > 193:
+            return False
+    
+    return True
+
+def is_vaild_hcl(hcl):
+    if hcl[0] != '#': return False
+
+    if len(hcl[1:]) != 6:
+        return False
+    
+    return True
+
+def is_vaild_ecl(ecl):
+    colors = ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
+
+    if ecl not in colors:
+        return False
+
+    return True
+
+def is_vaild_pid(pid):
+    if len(pid) != 9:
+        return False
+    
+    return True
+
+def has_vaild_data(passport):
+    passport = passport.split()
+    data = {}
+
+    for item in passport:
+        key = item[:3]
+        value = item[4:]
+        data[key] = value
+
+    if not is_vaild_byr(data['byr']):
+        return False
+    
+    if not is_vaild_iyr(data['iyr']):
+        return False
+
+    if not is_vaild_eyr(data['eyr']):
+        return False
+
+    if not is_vaild_hgt(data['hgt']):
+        return False
+
+    if not is_vaild_hcl(data['hcl']):
+        return False
+
+    if not is_vaild_ecl(data['ecl']):
+        return False
+
+    if not is_vaild_pid(data['pid']):
+        return False
+
+    return True 
+
+vaildCount = 0
+for pp in good_passports:
+    if has_vaild_data(pp):
+      vaildCount += 1
+
+print(vaildCount)
