@@ -11,8 +11,6 @@ article, aside, footer, header, main, nav, section {
 }
 body {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   color: rgba(0,0,0,.87);
   font-family: "Manrope",Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -29,7 +27,6 @@ header {
   padding-top: 20px;
   padding-bottom: 15px;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0,0.2);
-  position: relative;
   position: fixed;
   font-size: 1.2em;
   align-items: center;
