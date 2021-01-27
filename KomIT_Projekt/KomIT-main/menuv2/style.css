@@ -97,3 +97,6 @@ li a:hover {
   text-decoration: underline;
   color: rgb(158, 147, 147);
 }
+ p {
+   padding-top: 10px;
+ }
