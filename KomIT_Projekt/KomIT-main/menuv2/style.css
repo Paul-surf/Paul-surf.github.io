@@ -97,6 +97,55 @@ li a:hover {
   text-decoration: underline;
   color: rgb(158, 147, 147);
 }
+<<<<<<< HEAD
  p {
    padding-top: 10px;
  }
+=======
+
+main {
+  padding-top: 95px;
+  padding: 95px 400px 0 135px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.li-1 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.list-over-items {
+  width: 135px;
+}
+
+h5 {
+  margin: 10px;
+}
+
+.menu-side {
+  padding: 20px 0 0 0;
+  display: flex;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+.aside-of-list {
+  flex-grow: 1;
+}
+
+.aside-of-list section h3 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+>>>>>>> 59e53f8bb24126dc9aba9a663b3169976693a43c
