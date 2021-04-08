@@ -88,22 +88,18 @@ section {
     rgba(255,255,255,0.8), 
     rgba(255,255,255,0.3));
     border-radius: 1rem;
-}
-
-.image {
-    position: absolute;
-    top: -8%;
-    right: -5%;
-}
-
-.image2 {
-    position: absolute;
-    top: -4%;
-    left: 5%
+    display: grid;
+    grid-template-columns: 125px 300px 125px;
+    grid-column-gap: 140px;
+    grid-area: auto;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
 }
 
 .links-til-sider {
     margin: 1rem;
+    padding-right: 50px;
     display: grid;
     grid-template-columns: 300px 300px;
     grid-row-gap: 50px;
