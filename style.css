@@ -102,3 +102,47 @@ aside {
     color: lightgray;
     text-decoration: underline white;
   }
+
+  .parentCircle {
+    width: 175px;
+    height: 175px;
+    background: #242627;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 5px solid #455e8c;
+  }
+
+  .square {
+    width: 175px;
+    height: 175px;
+    background: #242627;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 5px solid #455e8c;
+    transform: rotate(45deg);
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    background-color: #455e8c;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+  }
+  
+  .support {
+    width: 35px;
+    height: 35px;
+    background-color: #242627;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    border: 20px solid #455e8c;
+    box-shadow: 0 0 0 5px #242627;
+    height: 30px;
+    width: 30px;
+  }
