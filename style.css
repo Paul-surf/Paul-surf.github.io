@@ -104,7 +104,7 @@ aside {
   }
 
   .parentSquare {
-    width: 175px;
+    width: 185px;
     height: 175px;
     background: #242627;
     position: absolute;
@@ -118,8 +118,6 @@ aside {
     height: 175px;
     background: #242627;
     position: absolute;
-    top:50%;
-    left: 50%;
     border: 5px solid #455e8c;
     transform: rotate(45deg);
   }
