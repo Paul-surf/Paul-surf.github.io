@@ -1,0 +1,11 @@
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\bin\Debug\netcoreapp3.0\HanoiTowers.exe
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\bin\Debug\netcoreapp3.0\HanoiTowers.deps.json
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\bin\Debug\netcoreapp3.0\HanoiTowers.runtimeconfig.json
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\bin\Debug\netcoreapp3.0\HanoiTowers.runtimeconfig.dev.json
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\bin\Debug\netcoreapp3.0\HanoiTowers.dll
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\bin\Debug\netcoreapp3.0\HanoiTowers.pdb
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\obj\Debug\netcoreapp3.0\HanoiTowers.csprojAssemblyReference.cache
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\obj\Debug\netcoreapp3.0\HanoiTowers.AssemblyInfoInputs.cache
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\obj\Debug\netcoreapp3.0\HanoiTowers.AssemblyInfo.cs
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\obj\Debug\netcoreapp3.0\HanoiTowers.dll
+C:\Users\fanpr\Desktop\Programmering\Recursion\HanoiTowers\obj\Debug\netcoreapp3.0\HanoiTowers.pdb

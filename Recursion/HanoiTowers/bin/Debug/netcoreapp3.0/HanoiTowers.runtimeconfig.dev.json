@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\fanpr\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\fanpr\\.nuget\\packages"
+    ]
+  }
+}
